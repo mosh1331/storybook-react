@@ -1,0 +1,12 @@
+name: PR Message
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "A new pull request has been opened!"
